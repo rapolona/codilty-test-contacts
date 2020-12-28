@@ -1,0 +1,34 @@
+{
+    "private": true,
+    "scripts": {
+        "dev": "npm run development",
+        "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "watch": "npm run development -- --watch",
+        "watch-poll": "npm run watch -- --watch-poll",
+        "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --disable-host-check --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "prod": "npm run production",
+        "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --config=node_modules/laravel-mix/setup/webpack.config.js"
+    },
+    "devDependencies": {
+        "@nuxtjs/vuetify": "^1.11.2",
+        "axios": "^0.18",
+        "bootstrap": "^4.5.3",
+        "cross-env": "^5.1",
+        "jquery": "^3.2",
+        "laravel-mix": "^5.0.9",
+        "lodash": "^4.17.4",
+        "popper.js": "^1.12",
+        "vue": "^2.6.12",
+        "vue-template-compiler": "^2.6.12"
+    },
+    "dependencies": {
+        "bootstrap-vue": "^2.20.1",
+        "jquery-csv": "^1.0.11",
+        "vee-validate": "^2.0.6",
+        "vue-axios": "^2.1.1",
+        "vue-csv-import": "^3.3.5",
+        "vue-stepper": "^1.4.2",
+        "vuejs-dialog": "^0.9.0",
+        "vuelidate": "^0.7.6"
+    }
+}
